@@ -9,6 +9,8 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install python3-pip -y
 
 your EC2 Ubuntu environment is set up with a system-managed Python installation. This is typical for environments prioritizing stability, as the Python version is linked to the operating system's dependencies.
+
+
 Step 2: Use a Virtual Environment
 Install venv (if not already installed):
 
@@ -30,6 +32,7 @@ Run your script while the virtual environment is active.
 
 
 Step 3: Prepare the Dataset
+
 Create a file data.csv:
 
 nano data.csv
@@ -50,6 +53,7 @@ X,Y
 Save and exit (CTRL+O, CTRL+X).
 
 Step 4: Implement K-Means Clustering
+
 Create a Python script:
 
 nano clustering.py
@@ -87,6 +91,7 @@ plt.show()
 
 
 Step 5: Run the Script
+
 Run the Python script:
 
 python3 clustering.py
@@ -96,7 +101,9 @@ Expected Output
 Cluster centers printed in the terminal.
 A visualization of clusters displayed, with red "X" marking the cluster centers.
 
+
 Step 6: Analyze Results
+
 Observe how the data points are grouped.
 Experiment by changing n_clusters to 3 or more.
 
