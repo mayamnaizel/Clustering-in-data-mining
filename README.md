@@ -1,4 +1,4 @@
-# Clustering in data mining
+# Clustering in Data Mining
 Simple Clustering lab using Ubuntu and Python scripts 
 
 Step 1: Set Up the EC2 Ubuntu Instance
