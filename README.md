@@ -1,43 +1,47 @@
 # Clustering in Data Mining
-Simple Clustering lab using Ubuntu and Python scripts 
+# Simple Clustering lab using Ubuntu and Python scripts 
 
-Step 1: Set Up the EC2 Ubuntu Instance
-Launch an EC2 instance:
-Update and install necessary packages:
+# Step 1: Set Up the EC2 Ubuntu Instance
+# Launch an EC2 instance & update and install necessary packages:
 
 sudo apt update && sudo apt upgrade -y
+
 sudo apt install python3-pip -y
 
-your EC2 Ubuntu environment is set up with a system-managed Python installation. This is typical for environments prioritizing stability, as the Python version is linked to the operating system's dependencies.
+----------------------------------------------------------------------------------------
 
 
-Step 2: Use a Virtual Environment
-Install venv (if not already installed):
+# your EC2 Ubuntu environment is set up with a system-managed Python installation. This is typical for environments prioritizing stability, as the Python version is linked to the operating system's dependencies.
+
+# Step 2: Use a Virtual Environment
+
+# Install venv (if not already installed):
 
 sudo apt update
 sudo apt install python3-venv -y
 
-Create a virtual environment:
+# Create a virtual environment:
 
 python3 -m venv myenv
 
-Activate the virtual environment:
+# Activate the virtual environment:
+
 source myenv/bin/activate
 
-Install required packages within the virtual environment:
+# Install required packages within the virtual environment:
 
 pip install pandas numpy scikit-learn matplotlib
 
-Run your script while the virtual environment is active.
+# Run your script while the virtual environment is active.
+----------------------------------------------------------------------------------------
 
+# Step 3: Prepare the Dataset
 
-Step 3: Prepare the Dataset
-
-Create a file data.csv:
+# Create a file data.csv:
 
 nano data.csv
 
-Paste the following content (simple 2D data for clustering):
+# Paste the following content (simple 2D data for clustering):
 
 X,Y
 1,2
@@ -50,15 +54,18 @@ X,Y
 10,2
 9,3
 
-Save and exit (CTRL+O, CTRL+X).
+# Save and exit (CTRL+O, CTRL+X).
 
-Step 4: Implement K-Means Clustering
+----------------------------------------------------------------------------------------
 
-Create a Python script:
+
+# Step 4: Implement K-Means Clustering
+
+# Create a Python script:
 
 nano clustering.py
 
-Paste the following code:
+# Paste the following code:
 
 import pandas as pd
 import numpy as np
@@ -89,17 +96,22 @@ plt.xlabel('X')
 plt.ylabel('Y')
 plt.show()
 
+----------------------------------------------------------------------------------------
 
-Step 5: Run the Script
+# Step 5: Run the Script
 
-Run the Python script:
+# Run the Python script:
 
 python3 clustering.py
 
+ ----------------------------------------------------------------------------------------
 
-Expected Output
+
+# Expected Output
 Cluster centers printed in the terminal.
 A visualization of clusters displayed, with red "X" marking the cluster centers.
+
+----------------------------------------------------------------------------------------
 
 
 Step 6: Analyze Results
